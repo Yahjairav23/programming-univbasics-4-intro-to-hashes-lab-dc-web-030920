@@ -37,11 +37,11 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
-  if hash[key] do
-    hash{key => += 1}
+  if hash[key] = nil do
+    hash[key] = 1
   end
   if hash[key] do
-    hash{key => 1} 
+    hash[key] += 1
   end
   
 end
